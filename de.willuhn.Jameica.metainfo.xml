@@ -28,6 +28,9 @@
   </description>
   <url type="homepage">https://www.willuhn.de/products/jameica/</url>
   <releases>
+    <release date="2025-10-29" version="2.12.0">
+      <url>https://willuhn.de/wiki/doku.php?id=hibiscus_2.12#jameica_2120_29102025</url>
+    </release>
     <release date="2025-02-11" version="2.10.5">
       <url>https://willuhn.de/wiki/doku.php?id=hibiscus_2.10#jameica_2105_11022025</url>
     </release>

@@ -35,15 +35,23 @@ modules:
       - install -Dm644 -t /app/share/applications de.willuhn.Jameica.desktop
     sources:
       - type: archive
-        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.5.zip
-        sha256: d5d81f2a53b41599224fc71c2ad80fe28a8ebea9dc94faad776cf58da8b63eac
+        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.12.0.zip
+        sha256: d5abbd1f8ce4c799e50669e6f4cb7deebf7af3343891e24ff36377ac4ea4192a
         dest: jameica
         only-arches: [x86_64]
+        x-checker-data:
+          type: html
+          url: https://willuhn.de/products/jameica/download.php
+          pattern: <a href="(releases/current/jameica/jameica-linux64-([\d\.]+\d).zip)">jameica-linux64-[\d\.]+\d.zip</a>
       - type: archive
-        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linuxarm64-2.10.5.zip
-        sha256: a255e5e72dc02c61788424f2b98cb9eeb119c6ff122e124a0fa7da07d775ddce
+        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linuxarm64-2.12.0.zip
+        sha256: f924f2c1f286abb6b18c199adae8e6531aa33ca9f0cbb1ac74b85d83f687a466
         dest: jameica
         only-arches: [aarch64]
+        x-checker-data:
+          type: html
+          url: https://willuhn.de/products/jameica/download.php
+          pattern: <a href="(releases/current/jameica/jameica-linuxarm64-([\d\.]+\d).zip)">jameica-linuxarm64-[\d\.]+\d.zip</a>
       - type: file
         path: jameica-wrapper.sh
       - type: file
